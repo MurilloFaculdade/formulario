@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post" id="formulario">
+            <h1>Cadastro de Usuário</h1>
+        
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required aria-label="Nome Completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required aria-label="E-mail">
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required aria-label="Data de Nascimento">
+                
+                <label>Gênero:</label>
+                <label for="masculino">
+                    <input type="radio" id="masculino" name="genero" value="Masculino"> Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" id="feminino" name="genero" value="Feminino"> Feminino
+                </label>
+                <label for="outro">
+                    <input type="radio" id="outro" name="genero" value="Outro"> Outro
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Credenciais</legend>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required aria-label="Senha">
+
+                <label for="confirmacao-senha">Confirmação de Senha:</label>
+                <input type="password" id="confirmacao-senha" name="confirmacao-senha" placeholder="Confirme sua senha" required aria-label="Confirmação de Senha">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Localização</legend>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required aria-label="Estado">
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+              
+                </select>
+
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" required aria-label="Cidade">
+                    <option value="" disabled selected>Selecione sua cidade</option>
+                    <option value="SP-Campinas">Campinas</option>
+                    <option value="RJ-Rio">Rio de Janeiro</option>
+                    <option value="MG-Belo Horizonte">Belo Horizonte</option>
+                    <option value="BA-Salvador">Salvador</option>
+                  
+                </select>
+            </fieldset>
+
+        
+            <fieldset>
+                <legend>Descrição Pessoal</legend>
+                <label for="descricao">Descrição Pessoal:</label>
+                <textarea id="descricao" name="descricao" placeholder="Fale um pouco sobre você" rows="4" required aria-label="Descrição Pessoal"></textarea>
+            </fieldset>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
